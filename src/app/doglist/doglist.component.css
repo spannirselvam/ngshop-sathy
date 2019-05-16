@@ -1,0 +1,14 @@
+.dogs {
+    display: flex; 
+    justify-content:space-around ;
+    }
+
+    .niceBoxes {
+        float: left;
+        width: 200px ;
+        Height:150px ;
+        border: solid lightgray 2px;
+        text-align: center;
+        padding: 5px;
+        border-radius: 8%;
+         }
