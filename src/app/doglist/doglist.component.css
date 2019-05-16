@@ -1,14 +1,23 @@
 .dogs {
-    display: flex; 
-    justify-content:space-around ;
-    }
+  display: flex;
+  justify-content: space-around;
+}
 
-    .niceBoxes {
-        float: left;
-        width: 200px ;
-        Height:150px ;
-        border: solid lightgray 2px;
-        text-align: center;
-        padding: 5px;
-        border-radius: 8%;
-         }
+.niceBoxes {
+  float: left;
+  width: 150px;
+  Height: 150px;
+  /* border: solid lightgray 2px; */
+  text-align: center;
+  font-size: small;
+  padding:20px;
+  /* border-radius: 8%; */
+
+}
+
+img {
+  border-radius: 8px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  /* max-width: 100%;
+  height: auto; */
+}
