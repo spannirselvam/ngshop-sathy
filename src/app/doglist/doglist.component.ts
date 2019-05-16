@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { DogsService } from '../dogs.service' ;
-import { Dog } from '../dog'; 
+import { DogsService } from '../dogs.service';
+import { Dog } from '../dog';
 
 @Component({
   selector: 'app-doglist',
@@ -8,7 +8,7 @@ import { Dog } from '../dog';
   styleUrls: ['./doglist.component.css']
 })
 export class DoglistComponent implements OnInit {
-  dogData: Dog[];
+  Dogs: Dog[];
   constructor(
     private dogService: DogsService
   ) { }
@@ -17,7 +17,12 @@ export class DoglistComponent implements OnInit {
     this.getDogs();
   }
   getDogs() {
-    this.dogData = this.dogService.getDogs();
+    this.dogService.getDogs().subscribe((results) => {
+      console.log('results: ', results);
+      this.Dogs = results;
+      return this.Dogs;
+    }
+    );
   }
 
 }
